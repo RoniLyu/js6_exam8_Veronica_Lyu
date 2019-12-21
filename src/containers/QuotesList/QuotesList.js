@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import axiosApi from "../../axios-api";
+import {Card, CardBody, CardTitle, CardText, Button} from 'reactstrap'
 
 class QuotesList extends Component {
     state = {
@@ -19,7 +20,16 @@ class QuotesList extends Component {
     render() {
         return (
             <div>
-
+               {Object.keys(this.state.quotes).map(id => (
+                   <Card className="mt-3 mb-3">
+                       <CardBody>
+                           <CardTitle>{this.state.quotes[id].author}</CardTitle>
+                           <CardText>{this.state.quotes[id].text}</CardText>
+                           <Button className="mr-3" color="danger">x</Button>
+                           <Button color="success">Edit</Button>
+                       </CardBody>
+                   </Card>
+               ))}
             </div>
         );
     }
