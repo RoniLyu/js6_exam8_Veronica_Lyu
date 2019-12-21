@@ -9,13 +9,10 @@ const Navigation = () => {
             <NavbarBrand tag ={RouterNavLink} to="/">Quotes</NavbarBrand>
             <Nav className="mr-auto" navbar>
                 <NavItem>
-                    <NavLink tag ={RouterNavLink} to="/quotes/new">New quotes</NavLink>
+                    <NavLink tag ={RouterNavLink} to="/quotes">New quotes</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink tag ={RouterNavLink} to="/about">about</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink tag ={RouterNavLink} to="/contact">contact</NavLink>
+                    <NavLink tag ={RouterNavLink} to="/quotes/new">about</NavLink>
                 </NavItem>
             </Nav>
         </Navbar>

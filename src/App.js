@@ -4,6 +4,7 @@ import Navigation from "./components/UI/Navigation/Navigation";
 import {Route, Switch} from 'react-router-dom';
 import QuotesList from "./containers/QuotesList/QuotesList";
 import NewQuote from './containers/NewQuote/NewQuote'
+import EditQuote from "./containers/EditQuote/EditQuote";
 
 
 function App() {
@@ -11,7 +12,6 @@ function App() {
       <Fragment>
           <Navigation/>
           <Container>
-
               <Switch>
                   <Route path='/' exact component={QuotesList} />
                   <Route path='/quotes/new' component={NewQuote} />
