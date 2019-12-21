@@ -6,16 +6,16 @@ import {NavLink as RouterNavLink} from 'react-router-dom';
 const Navigation = () => {
     return (
         <Navbar color="light" light expand="md">
-            <NavbarBrand component ={RouterNavLink} to="/">Quotes</NavbarBrand>
+            <NavbarBrand tag ={RouterNavLink} to="/">Quotes</NavbarBrand>
             <Nav className="mr-auto" navbar>
                 <NavItem>
-                    <NavLink component ={NavLink} to="/quotes/new">New quotes</NavLink>
+                    <NavLink tag ={RouterNavLink} to="/quotes/new">New quotes</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink component ={NavLink} to="/about">about</NavLink>
+                    <NavLink tag ={RouterNavLink} to="/about">about</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink component ={NavLink} to="/contact">contact</NavLink>
+                    <NavLink tag ={RouterNavLink} to="/contact">contact</NavLink>
                 </NavItem>
             </Nav>
         </Navbar>
